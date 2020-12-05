@@ -2,6 +2,14 @@
 @import 'global/typography';
 @import 'global/base';
 @import 'global/libs';
+@import 'components/section';
+@import 'components/product';
 @import 'layout/header';
+@import 'layout/hero';
+@import 'layout/catalog';
+@import 'layout/brands';
+@import 'layout/big-set';
+@import 'layout/recommend';
 @import 'layout/footer';
+@import 'pages/about';
 @import 'queries/media';

@@ -13,14 +13,15 @@ let path = {
     html: [`${srcf}/*.html`, `!${srcf}/_*.html`],
     css: `${srcf}/scss/**/*.scss`,
     js: `${srcf}/js/script.js`,
-    img: `${srcf}/img/**/*.{jpg, png, svg, gif, ico, webp}`,
+    img: srcf + '/img/**/*.*',
     fonts: `${srcf}/fonts/**/*.ttf`,
   },
   watch: {
     html: `${srcf}/**/*.html`,
     css: `${srcf}/scss/**/*.scss`,
     js: `${srcf}/js/**/*.js`,
-    img: `${srcf}/img/**/*.{jpg, png, svg, gif, ico, webp}`,
+    img: `${srcf}/img/**/*.*`,
+    fonts: `${srcf}/fonts/**/*.ttf`,
   },
   clean: `./${buildf}/`,
 };
@@ -115,6 +116,7 @@ function pic() {
       })
     )
     .pipe(dest(path.build.img))
+
     .pipe(src(path.src.img))
     .pipe(
       imagemin({
@@ -124,12 +126,16 @@ function pic() {
         optimizationLevel: 3,
       })
     )
-    .pipe(dest(path.build.img));
+    .pipe(dest(path.build.img))
+    .pipe(browserSync.stream());
 }
 
 function font() {
   src(path.src.fonts).pipe(ttf2woff()).pipe(dest(path.build.fonts));
-  return src(path.src.fonts).pipe(ttf2woff2()).pipe(dest(path.build.fonts));
+  return src(path.src.fonts)
+    .pipe(ttf2woff2())
+    .pipe(dest(path.build.fonts))
+    .pipe(browserSync.stream());
 }
 
 function observe() {
@@ -137,6 +143,7 @@ function observe() {
   gulp.watch([path.watch.js], bundlejs);
   gulp.watch([path.watch.html], markup);
   gulp.watch([path.watch.img], pic);
+  gulp.watch([path.watch.fonts], font);
 }
 
 function clean() {

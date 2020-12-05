@@ -1,0 +1,68 @@
+.product {
+  position: relative;
+  width: 100%;
+  max-width: 279px;
+  padding: 24px;
+  margin-bottom: 25px;
+  background: $white;
+  border-radius: 10px;
+  box-shadow: 0 4px 25px rgba(52, 52, 52, 0.18);
+
+  &__abstract {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &__pic {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+
+    & span:first-child {
+      width: 42px;
+      margin-right: 15px;
+      font-size: 14px;
+      color: #999;
+    }
+
+    & span:last-child {
+      font-size: 14px;
+      color: $text;
+    }
+  }
+
+  &__btn {
+    padding: 5px 28px;
+    font-size: 18px;
+    color: $white;
+    background: $primary;
+    border: 1px solid $primary;
+    border-radius: 17px;
+    transition: 0.3s;
+
+    &:hover {
+      color: $primary;
+      background: $white;
+    }
+
+    &-out {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+  }
+}

@@ -2,9 +2,31 @@
 *::after,
 *::before {
   box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent;
   padding: 0;
   margin: 0;
+  font-family: 'Panton';
+  font-size: 16px;
+  font-weight: 400;
+  color: $text;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  height: 5000px;
+}
+
+body::-webkit-scrollbar {
+  width: 7px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: $secondary;
+  outline: 1px solid $white;
+}
+
+::selection {
+  color: $white;
+  background: $secondary;
 }
 
 li {
@@ -26,6 +48,27 @@ h5,
 h6 {
   padding: 0;
   margin: 0;
+}
+
+h1 {
+  font-size: 94px;
+  font-weight: 700;
+  color: $white;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+h2 {
+  padding-bottom: 50px;
+  font-size: 65px;
+  font-weight: 700;
+  color: $text;
+  text-align: center;
+}
+
+h4 {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
 }
 
 input {
@@ -51,4 +94,13 @@ button {
 
 select {
   -webkit-appearance: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+span {
+  display: block;
 }
