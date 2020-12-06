@@ -1,9 +1,38 @@
 .big-set {
+  position: relative;
   width: 100%;
   height: 250px;
   background: $primary;
 
+  &__abstract {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-position: center !important;
+    background-size: cover !important;
+  }
+
   &__pic {
     margin-top: -150px;
+  }
+
+  &__titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 250px;
+  }
+
+  &__title {
+    font-size: 69px;
+    color: $white;
+  }
+
+  &__subtitle {
+    font-size: 37px;
+    font-weight: 700;
+    color: $white;
   }
 }

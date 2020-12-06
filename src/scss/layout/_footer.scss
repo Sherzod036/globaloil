@@ -1,0 +1,135 @@
+.footer {
+  position: relative;
+  width: 100%;
+  padding: 40px 0;
+  background: #1a1a1a;
+
+  &__abstract {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-position: center !important;
+    background-size: cover !important;
+  }
+
+  &__logo {
+    margin-bottom: 21px;
+  }
+
+  &__desc {
+    font-size: 14px;
+    line-height: 146%;
+    color: $white;
+  }
+
+  &__nav {
+    & ul {
+      & li {
+        margin-bottom: 15px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        & a {
+          font-size: 18px;
+          line-height: 22px;
+          color: $white;
+          transition: 0.3s;
+
+          &:hover {
+            color: $secondary;
+          }
+        }
+      }
+    }
+  }
+
+  &__contact {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: $white;
+    transition: 0.3s;
+
+    &:hover {
+      color: $secondary;
+
+      & *::before {
+        color: $secondary;
+        transition: 0.3s;
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 23px;
+      line-height: 160%;
+    }
+
+    & *::before {
+      margin-right: 13px;
+      font-size: 18px;
+      color: $white;
+    }
+  }
+
+  &__subscribe {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+
+    &-item {
+      margin-right: 28px;
+
+      &:hover {
+        & *::before {
+          color: $secondary;
+          transition: 0.3s;
+        }
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      & *::before {
+        font-size: 23px;
+        color: $white;
+      }
+    }
+  }
+}
+
+.copyright {
+  width: 100%;
+  padding: 12px 0;
+  background: #3c3c3c;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__txt {
+    font-size: 14px;
+    line-height: 165%;
+    color: #999;
+  }
+}
+
+.dev {
+  display: flex;
+  align-items: center;
+
+  &__txt {
+    margin-right: 10px;
+    font-size: 16px;
+    line-height: 20px;
+    color: $white;
+  }
+}

@@ -4,14 +4,22 @@
   max-width: 279px;
   padding: 24px;
   margin-bottom: 25px;
+  overflow: hidden;
   background: $white;
   border-radius: 10px;
   box-shadow: 0 4px 25px rgba(52, 52, 52, 0.18);
+
+  &:hover {
+    & .product__abstract {
+      transform: scale(1.2);
+    }
+  }
 
   &__abstract {
     position: absolute;
     top: 0;
     right: 0;
+    transition: 0.3s;
   }
 
   &__pic {
@@ -30,7 +38,7 @@
   &__info {
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 
     & span:first-child {
       width: 42px;
@@ -47,6 +55,7 @@
 
   &__btn {
     padding: 5px 28px;
+    margin-top: 10px;
     font-size: 18px;
     color: $white;
     background: $primary;

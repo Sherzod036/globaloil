@@ -40,7 +40,7 @@
             width: 0%;
             height: 2px;
             content: '';
-            background: $primary;
+            background: $secondary;
             transition: 0.3s;
             transform: translateX(-50%);
           }
@@ -64,13 +64,14 @@
     line-height: 22px;
     color: $white;
     background: $primary;
-    border: 1px solid $primary;
+    border: 2px solid $primary;
     border-radius: 17px;
     transition: 0.3s;
 
     &:hover {
       color: $primary;
       background: $white;
+      border: 2px solid $primary;
     }
   }
 }
