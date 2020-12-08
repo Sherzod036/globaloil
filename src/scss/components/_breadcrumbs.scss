@@ -1,0 +1,31 @@
+.breadcrumbs {
+  padding-top: 108px;
+  padding-bottom: 33px;
+
+  &__inner {
+    padding: 13px 22px;
+    background: $white;
+    border-radius: 5px;
+    box-shadow: 0 4px 25px rgba(52, 52, 52, 0.18);
+
+    & ul {
+      display: flex;
+      align-items: center;
+
+      & li {
+        & a {
+          font-size: 16px;
+          line-height: 165%;
+        }
+
+        & span {
+          color: #c4c4c4;
+        }
+
+        & div {
+          margin: 0 15px;
+        }
+      }
+    }
+  }
+}

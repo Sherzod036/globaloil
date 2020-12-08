@@ -4,6 +4,8 @@
 @import 'global/libs';
 @import 'components/section';
 @import 'components/product';
+@import 'components/burger';
+@import 'components/breadcrumbs';
 @import 'layout/header';
 @import 'layout/hero';
 @import 'layout/catalog';
@@ -13,4 +15,6 @@
 @import 'layout/feedback';
 @import 'layout/footer';
 @import 'pages/about';
+@import 'pages/products';
+@import 'pages/single-page';
 @import 'queries/media';

@@ -2,9 +2,7 @@
   position: fixed;
   z-index: 99;
   width: 100%;
-  padding: 13px 0;
-  background: $white;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 10px 0;
 
   &__container {
     display: flex;
@@ -28,8 +26,8 @@
         & a {
           position: relative;
           font-size: 18px;
-          font-weight: 600;
           line-height: 30px;
+          color: $white;
           transition: 0.3s;
 
           &::after {
@@ -40,14 +38,12 @@
             width: 0%;
             height: 2px;
             content: '';
-            background: $secondary;
+            background: $white;
             transition: 0.3s;
             transform: translateX(-50%);
           }
 
           &:hover {
-            color: $primary;
-
             &::after {
               width: 100%;
             }
@@ -62,16 +58,13 @@
     font-size: 18px;
     font-weight: 600;
     line-height: 22px;
-    color: $white;
-    background: $primary;
-    border: 2px solid $primary;
+    color: $primary;
+    background: $white;
     border-radius: 17px;
-    transition: 0.3s;
-
-    &:hover {
-      color: $primary;
-      background: $white;
-      border: 2px solid $primary;
-    }
   }
+}
+
+.background {
+  background: $primary;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }

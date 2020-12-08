@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Global Oil</title>
+    <link rel="stylesheet" href="css/bundle.min.css" />
+  </head>
+  <body>
+    @@include('partials/_header-pages.html')
+    @@include('partials/_breadcrumbs.html')
+
+    <div class="page-products">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-xl-3">
+            <div class="filter"></div>
+          </div>
+          <div class="col-lg-8 col-xl-9">
+            <div class="row">
+              <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                @@include('partials/_product.html')
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                @@include('partials/_product.html')
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                @@include('partials/_product.html')
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                @@include('partials/_product.html')
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                @@include('partials/_product.html')
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                @@include('partials/_product.html')
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    @@include('partials/_footer.html')
+
+    <script src="js/bundle.min.js"></script>
+  </body>
+</html>

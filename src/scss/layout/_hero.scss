@@ -32,6 +32,41 @@
     transform: translateY(-50%);
   }
 
+  &__pic_right {
+    position: absolute;
+    top: 60%;
+    right: 5%;
+    transform: translateY(-50%);
+  }
+
+  &__abstract {
+    position: relative;
+  }
+
+  &__micking {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    z-index: 1;
+    transform: translateY(-50%);
+  }
+
+  &__shell {
+    position: absolute;
+    top: 46%;
+    right: 32%;
+    z-index: 2;
+    transform: translateY(-50%);
+  }
+
+  &__winiron {
+    position: absolute;
+    top: 50%;
+    right: 16%;
+    z-index: 3;
+    transform: translateY(-50%);
+  }
+
   &__titles {
     position: absolute;
     top: 30%;
