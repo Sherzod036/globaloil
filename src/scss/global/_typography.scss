@@ -29,7 +29,7 @@
 @font-face {
   font-family: 'icomoon';
   src: url('../fonts/icomoon/icomoon.woff2') format('woff2'),
-    url('../fonts/icomoon/icommon.woff') format('woff');
+    url('../fonts/icomoon/icomoon.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -43,6 +43,7 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -71,39 +72,48 @@
 .icon-filter:before {
   content: '\e907';
 }
-.icon-instagram:before {
+.icon-quality:before {
   content: '\e908';
 }
-.icon-mail:before {
+.icon-store:before {
   content: '\e909';
 }
-.icon-marker:before {
+.icon-certificate:before {
   content: '\e90a';
 }
-.icon-mkpp:before {
+.icon-instagram:before {
   content: '\e90b';
 }
-.icon-phone:before {
+.icon-mail:before {
   content: '\e90c';
 }
-.icon-mechanik:before {
+.icon-marker:before {
   content: '\e90d';
 }
-.icon-thermometr:before {
+.icon-mkpp:before {
   content: '\e90e';
 }
-.icon-stable:before {
+.icon-phone:before {
   content: '\e90f';
 }
-.icon-shield:before {
-  content: '\e910';
-}
-.icon-telegram:before {
+.icon-thermometr:before {
   content: '\e911';
 }
-.icon-cargo:before {
+.icon-stable:before {
   content: '\e912';
 }
-.icon-commerce:before {
+.icon-shield:before {
   content: '\e913';
+}
+.icon-telegram:before {
+  content: '\e914';
+}
+.icon-cargo:before {
+  content: '\e915';
+}
+.icon-commerce:before {
+  content: '\e916';
+}
+.icon-mechanik:before {
+  content: '\e917';
 }
