@@ -20,6 +20,10 @@ body::-webkit-scrollbar-thumb {
   outline: 1px solid $white;
 }
 
+body {
+  height: 5000px;
+}
+
 ::selection {
   color: $white;
   background: $secondary;

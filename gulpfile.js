@@ -38,8 +38,6 @@ const { src, dest } = require('gulp'),
   strip = require('gulp-strip-comments'),
   uglify = require('gulp-uglify-es').default,
   imagemin = require('gulp-imagemin'),
-  webp = require('gulp-webp'),
-  webpHtml = require('gulp-webp-html'),
   ttf2woff = require('gulp-ttf2woff'),
   ttf2woff2 = require('gulp-ttf2woff2'),
   stylelint = require('gulp-stylelint');
@@ -104,21 +102,12 @@ function markup() {
         basepath: '@file',
       })
     )
-    .pipe(webpHtml())
     .pipe(dest(path.build.html))
     .pipe(browserSync.stream());
 }
 
 function pic() {
   return src(path.src.img)
-    .pipe(
-      webp({
-        quality: 70,
-      })
-    )
-    .pipe(dest(path.build.img))
-
-    .pipe(src(path.src.img))
     .pipe(
       imagemin({
         progressive: true,

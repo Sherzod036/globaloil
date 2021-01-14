@@ -1,6 +1,6 @@
 .product {
   position: relative;
-  width: 100%;
+  width: 255px;
   max-width: 279px;
   padding: 24px;
   margin-bottom: 25px;
@@ -8,19 +8,6 @@
   background: $white;
   border-radius: 10px;
   box-shadow: 0 4px 25px rgba(52, 52, 52, 0.18);
-
-  &:hover {
-    & .product__abstract {
-      transform: scale(1.2);
-    }
-  }
-
-  &__abstract {
-    position: absolute;
-    top: 0;
-    right: 0;
-    transition: 0.3s;
-  }
 
   &__pic {
     position: relative;

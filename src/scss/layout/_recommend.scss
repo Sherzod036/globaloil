@@ -1,2 +1,15 @@
 .recommend {
+  position: relative;
+  &__abstract_right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 600px;
+  }
+  &__abstract_left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110px;
+  }
 }

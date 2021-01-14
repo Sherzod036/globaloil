@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   height: 250px;
-  background: $primary;
+  background: #1f1f1f;
 
   &__abstract {
     position: absolute;
@@ -27,12 +27,12 @@
 
   &__title {
     font-size: 69px;
-    color: $white;
+    color: $secondary;
   }
 
   &__subtitle {
     font-size: 37px;
     font-weight: 700;
-    color: $white;
+    color: $secondary;
   }
 }

@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {});
 jQuery(() => {
   if ($(window).width() < 768) {
     const $burger = $('.hamburger');
-    const $headerInner = $('.header__inner');
+    const $headerInner = $('.header__nav');
     const $headerNavItem = $('.header__nav ul li');
     const $headerBtn = $('.header__btn');
 
@@ -12,9 +12,9 @@ jQuery(() => {
     $burgerTl
       .fromTo(
         $headerInner,
-        0.3,
+        0.2,
         { height: 0, opacity: 0, visibility: 'hidden' },
-        { height: '195px', opacity: 1, visibility: 'visible' }
+        { height: '135px', opacity: 1, visibility: 'visible' }
       )
       .staggerFrom(
         $headerNavItem,
@@ -35,10 +35,10 @@ jQuery(() => {
     });
   }
 
-  const $subPic = $('.single-page__subpic');
+  const $subPic = $('.single-page__subpic img');
   const $mainPic = $('.single-page__mainpic img');
 
-  $subPic.on('click', () => {
+  $subPic.on('click', function () {
     let $currentPic = $(this).attr('src');
     $mainPic
       .fadeOut(400, () => {
